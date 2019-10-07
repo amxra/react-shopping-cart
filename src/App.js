@@ -32,7 +32,7 @@ function App() {
 
 					<Route
             			path="/cart"
-            			render={() => <ShoppingCart cart={cart} />}
+            			render={() => <ShoppingCart cart={cart} />} // use render if you are passing props into component 
           			/>
 				</CartContext.Provider>
 			</ProductContext.Provider>

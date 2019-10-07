@@ -12,11 +12,11 @@ const ShoppingCart = () => {
 		}, 0).toFixed(2);
 	};
 
-	const {cart, removeItem} = useContext(CartContext);
+	const {cart} = useContext(CartContext);
 	return (
 		<div className="shopping-cart">
 			{cart.map(item => (
-				<Item key={item.id} {...item} removeItem={removeItem} />
+				<Item key={item.id} {...item} />
 			))}
 
 			<div className="shopping-cart__checkout">
